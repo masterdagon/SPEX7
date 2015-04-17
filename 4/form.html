@@ -1,0 +1,19 @@
+<div class="col-md-3" style="border: thin lightblue solid; border-radius: 5px;padding: 1em;">
+    <p> Add new car </p>
+    <form>
+        <input type="hidden" name="id" ng-model="car.id">
+        Year <input type="number" name="year" placeholder="Year" ng-model="car.year">
+        <br>
+        Registered <input type="text" name="year" placeholder="dd/mm/yyyy" ng-model="car.registered">
+        <br>
+        Make <input type="text" name="make" placeholder="Make" ng-model="car.make">
+        <br>
+        Model <input type="text" name="model" placeholder="Model" ng-model="car.model">
+        <br>
+        Description <input type="text" name="description" placeholder="Description" ng-model="car.description">
+        <br>
+        Price <input type="number" name="price" placeholder="Price" ng-model="car.price">
+        <br>
+        <input type="submit" value="Save" ng-click="savecar()">
+    </form>
+</div>

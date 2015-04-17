@@ -1,0 +1,16 @@
+//
+   Created by Muggi on 16-04-2015.
+
+extends layout
+
+block content
+    table
+        thead
+           each item in v.data.parameters
+               th #{item}
+
+        tbody
+            each item in v.data.data
+                tr
+                    each param in v.data.parameters
+                        td #{item[param]}
